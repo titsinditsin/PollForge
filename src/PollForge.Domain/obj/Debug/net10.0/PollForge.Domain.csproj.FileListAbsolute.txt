@@ -1,0 +1,11 @@
+C:\Users\Danil\Projects\PollForge\src\PollForge.Domain\bin\Debug\net10.0\PollForge.Domain.deps.json
+C:\Users\Danil\Projects\PollForge\src\PollForge.Domain\bin\Debug\net10.0\PollForge.Domain.dll
+C:\Users\Danil\Projects\PollForge\src\PollForge.Domain\bin\Debug\net10.0\PollForge.Domain.pdb
+C:\Users\Danil\Projects\PollForge\src\PollForge.Domain\obj\Debug\net10.0\PollForge.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Danil\Projects\PollForge\src\PollForge.Domain\obj\Debug\net10.0\PollForge.Domain.AssemblyInfoInputs.cache
+C:\Users\Danil\Projects\PollForge\src\PollForge.Domain\obj\Debug\net10.0\PollForge.Domain.AssemblyInfo.cs
+C:\Users\Danil\Projects\PollForge\src\PollForge.Domain\obj\Debug\net10.0\PollForge.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Danil\Projects\PollForge\src\PollForge.Domain\obj\Debug\net10.0\PollForge.Domain.dll
+C:\Users\Danil\Projects\PollForge\src\PollForge.Domain\obj\Debug\net10.0\refint\PollForge.Domain.dll
+C:\Users\Danil\Projects\PollForge\src\PollForge.Domain\obj\Debug\net10.0\PollForge.Domain.pdb
+C:\Users\Danil\Projects\PollForge\src\PollForge.Domain\obj\Debug\net10.0\ref\PollForge.Domain.dll
