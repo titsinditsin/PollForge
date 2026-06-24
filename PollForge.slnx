@@ -1,6 +1,8 @@
 <Solution>
   <Folder Name="/src/">
+    <Project Path="src/PollForge.API/PollForge.API.csproj" />
     <Project Path="src/PollForge.Application/PollForge.Application.csproj" />
     <Project Path="src/PollForge.Domain/PollForge.Domain.csproj" />
+    <Project Path="src/PollForge.Infrastructure/PollForge.Infrastructure.csproj" />
   </Folder>
 </Solution>
