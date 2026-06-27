@@ -5,4 +5,7 @@
     <Project Path="src/PollForge.Domain/PollForge.Domain.csproj" />
     <Project Path="src/PollForge.Infrastructure/PollForge.Infrastructure.csproj" />
   </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/PollForge.UnitTests/PollForge.UnitTests.csproj" />
+  </Folder>
 </Solution>
