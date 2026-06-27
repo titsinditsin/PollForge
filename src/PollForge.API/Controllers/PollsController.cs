@@ -58,10 +58,45 @@ public class PollsController : ControllerBase
             poll.AddOption(optionText);
         }
 
+        if (poll.Options.Count >= 2)
+        {
+            poll.Activate();
+        }
+
         await _pollRepository.AddAsync(poll);
         await _unitOfWork.SaveChangesAsync();
 
         return CreatedAtAction(nameof(GetById), new { id = poll.Id }, poll.ToResponse());
+    }
+
+    [Authorize]
+    [HttpPost("{id:guid}/activate")]
+    public async Task<ActionResult> Activate(Guid id)
+    {
+        var poll = await _pollRepository.GetByIdAsync(id);
+        if (poll == null) return NotFound();
+        if (poll.AuthorId != _currentUserService.UserId) return Forbid();
+
+        poll.Activate();
+        _pollRepository.Update(poll);
+        await _unitOfWork.SaveChangesAsync();
+
+        return NoContent();
+    }
+
+    [Authorize]
+    [HttpPost("{id:guid}/close")]
+    public async Task<ActionResult> Close(Guid id)
+    {
+        var poll = await _pollRepository.GetByIdAsync(id);
+        if (poll == null) return NotFound();
+        if (poll.AuthorId != _currentUserService.UserId) return Forbid();
+
+        poll.Close();
+        _pollRepository.Update(poll);
+        await _unitOfWork.SaveChangesAsync();
+
+        return NoContent();
     }
 
     [Authorize]
